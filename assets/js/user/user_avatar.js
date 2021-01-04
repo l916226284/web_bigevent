@@ -8,7 +8,7 @@ $(function () {
         aspectRatio: 1,
         // 指定预览区域
         preview: '.img-preview'
-    }
+      }
 
     // 1.3 创建裁剪区域
     $image.cropper(options)
@@ -39,7 +39,7 @@ $(function () {
             method: 'POST',
             url:'/my/update/avatar',
             data: {
-                avatar,dataURL
+                avatar:dataURL
             },
             success: function (res) {
                 if (res.status !== 0) {
