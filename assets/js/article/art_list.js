@@ -84,7 +84,7 @@ $(function () {
     }
     $('tbody').on('click', '.btn-delete', function () {
         var len = $('.btn-delete').length
-        var id = $(this).sttr('data-id')
+        var id = $(this).attr('data-id')
         layer.confirm('确认删除?', { incon: 3, title: '提示' }, function (index) {
             $.ajax({
                 method: "GET",
